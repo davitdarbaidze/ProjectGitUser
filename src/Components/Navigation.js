@@ -4,6 +4,8 @@ import {faBars} from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
 import NavigatiomMenu from './NavigationMenu'
 
+
+
 function Navigation(){
     //Hook to show menu of Navigation 
     const [showMenu, setShowMenu] = useState(false)
@@ -27,6 +29,7 @@ function Navigation(){
     return(
         //Returning a nav for the menu if clicked on black side of menu will be returned to main menu also some transitions
         <nav>
+
             <span className="text-xl">
                 
                 <FontAwesomeIcon 

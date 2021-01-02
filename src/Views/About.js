@@ -10,7 +10,8 @@ function About(){
                 
             </h1>
             <p>
-                This is Home Page
+                This is a website which displays users of github in a grid view
+                or list view. it is possible to search for users and view information about them.
             </p>
         </div>
     )

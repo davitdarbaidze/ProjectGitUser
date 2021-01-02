@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import Hello from './Components/Hello'
-import CounterExample from './CounterExample'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
+  
 } from "react-router-dom"
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import Home from './Views/Home'
 import About from './Views/About'
-import Product from './Views/Product'
+import UserPage from './Components/userPage'
+import GridList from './Components/GridList'
+
+
+
 
 function App() {
   //<CounterExample></CounterExample>
   return (
-    <div class="relative p-1 pb-10">
+    <div className="relative p-1 pb-10">
 
       
 
@@ -28,13 +28,18 @@ function App() {
       <div className='p-3'>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <GridList></GridList>
           </Route>
           <Route path="/about">
             <About />   
           </Route>
-          <Route path="/products/:id">
-            <Product></Product>
+
+          <Route path="/Landing">
+            
+            
+          </Route>
+          <Route path="/:login">
+            <UserPage />
           </Route>
         </Switch>
       </div>
